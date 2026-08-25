@@ -12,19 +12,19 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fireglass.png
 name: Fireglass
-description: Fireglass was an Israeli browser-isolation cybersecurity startup, a portfolio company of
-  Lightspeed Venture Partners, whose remote-browser-isolation product removed active web content threats
-  by rendering pages in an isolated cloud environment. The company was acquired by Symantec in 2017 and
-  its technology folded into Symantec Web Isolation (now part of Broadcom); it no longer operates as an
-  independent brand. As of the 2026-07-19 enrichment probe the fireglass.com domain has been re-registered
-  and now serves Technical Glass Products, an unrelated fire-rated architectural glass manufacturer. No
-  surviving Fireglass developer portal, documentation, OpenAPI, MCP server, or /.well-known surface exists
-  to enrich; this stub is retained as a resolved Lightspeed portfolio lead.
+description: Fireglass was an Israeli browser-isolation cybersecurity startup, a portfolio company of Lightspeed
+  Venture Partners, whose remote-browser-isolation product removed active web content threats by rendering pages
+  in an isolated cloud environment. The company was acquired by Symantec in 2017 and its technology folded into
+  Symantec Web Isolation (now part of Broadcom); it no longer operates as an independent brand. As of the 2026-07-19
+  enrichment probe the fireglass.com domain has been re-registered and now serves Technical Glass Products, an unrelated
+  fire-rated architectural glass manufacturer. No surviving Fireglass developer portal, documentation, OpenAPI,
+  MCP server, or /.well-known surface exists to enrich; this stub is retained as a resolved Lightspeed portfolio
+  lead.
 x-status: no-api-surface
 x-status-reason: acquired-by-symantec-2017; domain-repurposed-technical-glass-products
 x-enrichment-probe:
   date: '2026-07-19'
-  fireglass_com: 'HTTP 200 -> Technical Glass Products (fire-rated glass), unrelated to original company'
+  fireglass_com: HTTP 200 -> Technical Glass Products (fire-rated glass), unrelated to original company
   developer_surface: none-found
 url: https://raw.githubusercontent.com/api-evangelist/fireglass/refs/heads/main/apis.yml
 x-type: company
@@ -35,7 +35,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-21'
 tags:
 - Company
 - Cybersecurity
@@ -54,3 +54,13 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+common:
+- type: ParentCompany
+  url: https://apis.io/providers/symantec/
+  name: Symantec
+  x-relationship: acquisition
+  x-generated-by: broadcom-family:2026-08-21
+  x-acquired: 2017
+x-parent: symantec
+x-relationship: acquisition
+x-acquired: 2017
